@@ -22,6 +22,6 @@ jobs:
             - run: node app.js
               env:
                 WUAI_COOKIE: ${{ secrets.WUAI_COOKIE }}
-                WEICHAT_CORPID: ${{ secrets.WEICHAT_CORPID }}
+                WEICHAT_CORPID: "1232324"
                 WEICHAT_CORPSECRET: ${{ secrets.WEICHAT_CORPSECRET }}
                 WEICHAT_AGENTID: ${{ secrets.WEICHAT_AGENTID }}
