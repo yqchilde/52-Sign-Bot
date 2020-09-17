@@ -25,7 +25,7 @@ async function ReplaceCookie() {
 async function sendNotify(content, corpid, agentid, corpsecret) {
     (async () => {
         const body = {
-            corpid: corpid,
+            corpid: process.env.WEICHAT_CORPID,
             agentid: agentid,
             corpsecret: corpsecret,
             message: content
@@ -71,7 +71,6 @@ async function start() {
             content = fs.readFileSync(path, "utf8");
         }
 
-        console.log(WEICHAT_CORPID);
         await sendNotify(content, WEICHAT_CORPID, WEICHAT_AGENTID, WEICHAT_CORPSECRET);
         console.log("发送结果完毕");
     }
