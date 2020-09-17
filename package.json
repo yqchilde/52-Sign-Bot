@@ -1,0 +1,22 @@
+{
+  "name": "52-sign-bot",
+  "version": "1.0.0",
+  "description": "This is a 52 forum daily check-in script.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "52pojie",
+    "sign",
+    "bot"
+  ],
+  "author": "Yqchilde",
+  "license": "MIT",
+  "dependencies": {
+    "download": "^8.0.0",
+    "got": "^11.6.2",
+    "node-fetch": "^2.6.1",
+    "tough-cookie": "^4.0.0"
+  }
+}
