@@ -23,9 +23,9 @@ async function ReplaceCookie() {
 }
 
 async function sendNotify(content, corpid, agentid, corpsecret) {
-    (async () => {
+    (async (corpid, agentid, corpsecret) => {
         const body = {
-            corpid: process.env.WEICHAT_CORPID,
+            corpid: corpid,
             agentid: agentid,
             corpsecret: corpsecret,
             message: content
@@ -41,7 +41,7 @@ async function sendNotify(content, corpid, agentid, corpsecret) {
         const json = await response.json();
 
         console.log(json);
-    })();
+    })(corpid, agentid, corpsecret);
 }
 
 async function start() {
