@@ -21,7 +21,7 @@ jobs:
               run: npm install
             - run: node app.js
               env:
-                JD_COOKIE: ${{ secrets.WUAI_COOKIE }}
-                WORKWECHAT_CORPID: ${{ secrets.WEICHAT_CORPID }}
-                WORKWECHAT_CORPSEC: ${{ secrets.WEICHAT_CORPSECRET }}
-                WORKWECHAT_AGENTID: ${{ secrets.WEICHAT_AGENTID }}
+                WUAI_COOKIE: ${{ secrets.WUAI_COOKIE }}
+                WEICHAT_CORPID: ${{ secrets.WEICHAT_CORPID }}
+                WEICHAT_CORPSECRET: ${{ secrets.WEICHAT_CORPSECRET }}
+                WEICHAT_AGENTID: ${{ secrets.WEICHAT_AGENTID }}
