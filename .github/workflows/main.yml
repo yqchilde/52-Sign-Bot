@@ -22,6 +22,10 @@ jobs:
             - run: node app.js
               env:
                 WUAI_COOKIE: ${{ secrets.WUAI_COOKIE }}
-                WEICHAT_CORPID: "1232324"
-                WEICHAT_CORPSECRET: ${{ secrets.WEICHAT_CORPSECRET }}
-                WEICHAT_AGENTID: ${{ secrets.WEICHAT_AGENTID }}
+                WEICHAT_CORPID: "ww578bc7099b9817b5"
+                WEICHAT_CORPSECRET: "Bd2_Qdrbro7cQ4M-fLshuYqT_FqBVeTBSXi-kWpl1H4"
+                WEICHAT_AGENTID: 1000003
+        
+#                 WEICHAT_CORPID: ${{ secrets.WEICHAT_CORPID }}
+#                 WEICHAT_CORPSECRET: ${{ secrets.WEICHAT_CORPSECRET }}
+#                 WEICHAT_AGENTID: ${{ secrets.WEICHAT_AGENTID }}
