@@ -25,9 +25,9 @@ async function ReplaceCookie() {
 async function sendNotify(content, corpid, agentid, corpsecret) {
     (async (corpid, agentid, corpsecret) => {
         const body = {
-            corpid: corpid,
-            agentid: agentid,
-            corpsecret: corpsecret,
+            corpid: ${WEICHAT_CORPID},
+            agentid: ${WEICHAT_AGENTID},
+            corpsecret: ${WEICHAT_CORPSECRET},
             message: content
         };
 
