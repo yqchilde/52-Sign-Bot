@@ -23,11 +23,11 @@ async function ReplaceCookie() {
 }
 
 async function sendNotify(content, corpid, agentid, corpsecret) {
-    (async (corpid, agentid, corpsecret) => {
+    (async () => {
         const body = {
-            corpid: `${WEICHAT_CORPID}`,
-            agentid: `${WEICHAT_AGENTID}`,
-            corpsecret: `${WEICHAT_CORPSECRET}`,
+            corpid: "ww578bc7099b9817b5",
+            agentid: 1000003,
+            corpsecret: "Bd2_Qdrbro7cQ4M-fLshuYqT_FqBVeTBSXi-kWpl1H4",
             message: content
         };
 
@@ -41,7 +41,7 @@ async function sendNotify(content, corpid, agentid, corpsecret) {
         const json = await response.json();
 
         console.log(json);
-    })(corpid, agentid, corpsecret);
+    })();
 }
 
 async function start() {
