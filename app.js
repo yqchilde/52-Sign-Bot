@@ -5,9 +5,9 @@ const exec = require('child_process').execSync
 const fetch = require('node-fetch')
 
 const WUAI_COOKIE = process.env.WUAI_COOKIE
-const WEICHAT_CORPID = process.env.WORKWECHAT_CORPID
-const WEICHAT_AGENTID = process.env.WORKWECHAT_AGENTID
-const WEICHAT_CORPSECRET = process.env.WORKWECHAT_CORPSEC
+const WEICHAT_CORPID = process.env.WEICHAT_CORPID
+const WEICHAT_AGENTID = process.env.WEICHAT_AGENTID
+const WEICHAT_CORPSECRET = process.env.WEICHAT_CORPSECRET
 
 async function downFile() {
     const url = `https://cdn.jsdelivr.net/gh/NobyDa/Script@master/52pojie-DailyBonus/52pojie.js`
