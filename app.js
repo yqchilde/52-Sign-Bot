@@ -71,6 +71,7 @@ async function start() {
             content = fs.readFileSync(path, "utf8");
         }
 
+        console.log(WEICHAT_CORPID);
         await sendNotify(content, WEICHAT_CORPID, WEICHAT_AGENTID, WEICHAT_CORPSECRET);
         console.log("发送结果完毕");
     }
