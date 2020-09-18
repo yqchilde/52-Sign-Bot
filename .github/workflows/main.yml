@@ -26,4 +26,3 @@ jobs:
                 WEICHAT_CORPID: ${{ secrets.WEICHAT_CORPID }}
                 WEICHAT_CORPSECRET: ${{ secrets.WEICHAT_CORPSECRET }}
                 WEICHAT_AGENTID: ${{ secrets.WEICHAT_AGENTID }}
-                WEICHAT_TEST: "woshiceshi"
