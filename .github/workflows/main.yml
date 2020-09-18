@@ -19,12 +19,15 @@ jobs:
               with:
                 node-version: '12.18.3'
 
-            - name: Run app
-              run: |
-                npm install
-                node ./app.js
+            - name: Npm Install
+              run: npm install
+              
+            - name: Runing
               env:
                 WUAI_COOKIE: ${{ secrets.WUAI_COOKIE }}       
                 WEICHAT_CORPID: ${{ secrets.WEICHAT_CORPID }}
                 WEICHAT_AGENTID: ${{ secrets.WEICHAT_AGENTID }}
                 WEICHAT_CORPSECRET: ${{ secrets.WEICHAT_CORPSECRET }}
+              run: |
+                node app.js
+                echo "$WEICHAT_CORPID"
