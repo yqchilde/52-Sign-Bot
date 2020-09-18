@@ -24,10 +24,14 @@ jobs:
               
             - name: Runing
               env:
-                WUAI_COOKIE: ${{ secrets.WUAI_COOKIE }}       
-                WEICHAT_CORPID: ${{ secrets.WEICHAT_CORPID }}
-                WEICHAT_AGENTID: ${{ secrets.WEICHAT_AGENTID }}
-                WEICHAT_CORPSECRET: ${{ secrets.WEICHAT_CORPSECRET }}
+#                 WUAI_COOKIE: ${{ secrets.WUAI_COOKIE }}       
+#                 WEICHAT_CORPID: ${{ secrets.WEICHAT_CORPID }}
+#                 WEICHAT_AGENTID: ${{ secrets.WEICHAT_AGENTID }}
+#                 WEICHAT_CORPSECRET: ${{ secrets.WEICHAT_CORPSECRET }}
+                WUAI_COOKIE: ${{ '3434' }}       
+                WEICHAT_CORPID: ${{ 'ww578bc7099b9817b5' }}
+                WEICHAT_AGENTID: ${{ 1000003 }}
+                WEICHAT_CORPSECRET: ${{ 'Bd2_Qdrbro7cQ4M-fLshuYqT_FqBVeTBSXi-kWpl1H4' }}
               run: |
                 node app.js
                 echo "$WEICHAT_CORPID"
