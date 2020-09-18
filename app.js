@@ -4,8 +4,6 @@ const download = require('download')
 const exec = require('child_process').execSync
 const fetch = require('node-fetch')
 
-console.log("wuai ", process.env)
-
 const WUAI_COOKIE = process.env.WUAI_COOKIE
 const WEICHAT_CORPID = process.env.WEICHAT_CORPID
 const WEICHAT_AGENTID = Number(process.env.WEICHAT_AGENTID)
