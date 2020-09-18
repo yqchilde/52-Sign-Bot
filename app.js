@@ -8,6 +8,12 @@ const WUAI_COOKIE = process.env.WUAI_COOKIE
 const WEICHAT_CORPID = process.env.WEICHAT_CORPID
 const WEICHAT_AGENTID = process.env.WEICHAT_AGENTID
 const WEICHAT_CORPSECRET = process.env.WEICHAT_CORPSECRET
+const WEICHAT_TEST = process.env.WEICHAT_TEST
+
+// const WUAI_COOKIE = "2e23"
+// const WEICHAT_CORPID = "ww578bc7099b9817b5"
+// const WEICHAT_AGENTID = 1000003
+// const WEICHAT_CORPSECRET = "Bd2_Qdrbro7cQ4M-fLshuYqT_FqBVeTBSXi-kWpl1H4"
 
 async function downFile() {
     const url = `https://cdn.jsdelivr.net/gh/NobyDa/Script@master/52pojie-DailyBonus/52pojie.js`
@@ -22,12 +28,13 @@ async function ReplaceCookie() {
     await fs.writeFileSync('./52pojie.js', content, 'utf8')
 }
 
-async function sendNotify(content, corpid, agentid, corpsecret) {
+async function sendNotify(content) {
     (async () => {
+        console.log("TEST IS ", WEICHAT_TEST);
         const body = {
-            corpid: "ww578bc7099b9817b5",
-            agentid: 1000003,
-            corpsecret: "Bd2_Qdrbro7cQ4M-fLshuYqT_FqBVeTBSXi-kWpl1H4",
+            corpid: WEICHAT_CORPID,
+            agentid: WEICHAT_AGENTID,
+            corpsecret: WEICHAT_CORPSECRET,
             message: content
         };
 
@@ -71,7 +78,7 @@ async function start() {
             content = fs.readFileSync(path, "utf8");
         }
 
-        await sendNotify(content, WEICHAT_CORPID, WEICHAT_AGENTID, WEICHAT_CORPSECRET);
+        await sendNotify(content);
         console.log("发送结果完毕");
     }
 }
