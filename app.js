@@ -4,15 +4,15 @@ const download = require('download')
 const exec = require('child_process').execSync
 const fetch = require('node-fetch')
 
-// const WUAI_COOKIE = process.env.WUAI_COOKIE
-// const WEICHAT_CORPID = process.env.WEICHAT_CORPID
-// const WEICHAT_AGENTID = process.env.WEICHAT_AGENTID
-// const WEICHAT_CORPSECRET = process.env.WEICHAT_CORPSECRET
+const WUAI_COOKIE = process.env.WUAI_COOKIE
+const WEICHAT_CORPID = process.env.WEICHAT_CORPID
+const WEICHAT_AGENTID = process.env.WEICHAT_AGENTID
+const WEICHAT_CORPSECRET = process.env.WEICHAT_CORPSECRET
 
-const WUAI_COOKIE = "2e23"
-const WEICHAT_CORPID = "ww578bc7099b9817b5"
-const WEICHAT_AGENTID = 1000003
-const WEICHAT_CORPSECRET = "Bd2_Qdrbro7cQ4M-fLshuYqT_FqBVeTBSXi-kWpl1H4"
+// const WUAI_COOKIE = "2e23"
+// const WEICHAT_CORPID = "ww578bc7099b9817b5"
+// const WEICHAT_AGENTID = 1000003
+// const WEICHAT_CORPSECRET = "Bd2_Qdrbro7cQ4M-fLshuYqT_FqBVeTBSXi-kWpl1H4"
 
 async function downFile() {
     const url = `https://cdn.jsdelivr.net/gh/NobyDa/Script@master/52pojie-DailyBonus/52pojie.js`

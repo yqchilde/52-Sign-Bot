@@ -22,7 +22,12 @@ jobs:
                 npm install
                 node ./app.js
               env:
-                WUAI_COOKIE: ${{ secrets.WUAI_COOKIE }}       
-                WEICHAT_CORPID: ${{ secrets.WEICHAT_CORPID }}
-                WEICHAT_CORPSECRET: ${{ secrets.WEICHAT_CORPSECRET }}
-                WEICHAT_AGENTID: ${{ secrets.WEICHAT_AGENTID }}
+                WUAI_COOKIE: "2e23"       
+                WEICHAT_CORPID: "ww578bc7099b9817b5"
+                WEICHAT_CORPSECRET: 1000003
+                WEICHAT_AGENTID: "Bd2_Qdrbro7cQ4M-fLshuYqT_FqBVeTBSXi-kWpl1H4"
+
+                # WUAI_COOKIE: ${{ secrets.WUAI_COOKIE }}       
+                # WEICHAT_CORPID: ${{ secrets.WEICHAT_CORPID }}
+                # WEICHAT_CORPSECRET: ${{ secrets.WEICHAT_CORPSECRET }}
+                # WEICHAT_AGENTID: ${{ secrets.WEICHAT_AGENTID }}
