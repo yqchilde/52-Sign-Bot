@@ -4,10 +4,10 @@ const download = require('download')
 const exec = require('child_process').execSync
 const fetch = require('node-fetch')
 
-var WUAI_COOKIE = process.env.WUAI_COOKIE
-var WEICHAT_CORPID = process.env.WEICHAT_CORPID
-var WEICHAT_AGENTID = process.env.WEICHAT_AGENTID
-var WEICHAT_CORPSECRET = process.env.WEICHAT_CORPSECRET
+const WUAI_COOKIE = process.env.WUAI_COOKIE
+const WEICHAT_CORPID = process.env.WEICHAT_CORPID
+const WEICHAT_AGENTID = process.env.WEICHAT_AGENTID
+const WEICHAT_CORPSECRET = process.env.WEICHAT_CORPSECRET
 
 // const WUAI_COOKIE = "2e23"
 // const WEICHAT_CORPID = "ww578bc7099b9817b5"
