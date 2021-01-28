@@ -31,7 +31,7 @@ async function sendNotify(content) {
             message: content
         };
 
-        const response = await fetch('https://api.yqqy.top/qiye_weichat', {
+        const response = await fetch('http://api.yqqy.top/qiye_weichat', {
             method: 'post',
             body: JSON.stringify(body),
             headers: {
